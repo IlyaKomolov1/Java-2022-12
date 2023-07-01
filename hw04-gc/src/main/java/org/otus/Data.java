@@ -1,14 +1,17 @@
 package org.otus;
 
 public class Data {
-    private  Integer value;
+    private int value;
 
-    public Data(Integer value) {
-        this.value = value;
+    public Data() {
     }
 
-    public Integer getValue() {
+    public int getValue() {
         return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
     }
 }
 
