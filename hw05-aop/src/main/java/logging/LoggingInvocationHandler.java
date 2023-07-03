@@ -1,4 +1,4 @@
-package org.otus;
+package logging;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -12,7 +12,7 @@ public class LoggingInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        if (method.isAnnotationPresent(Log.class)) {
+        if (!method.isDefault() && method.isAnnotationPresent(Log.class)) {
             System.out.print("executed method: " + method.getName());
             for (Object arg : args) {
                 System.out.print(", param: " + arg);

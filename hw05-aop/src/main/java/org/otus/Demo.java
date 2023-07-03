@@ -1,5 +1,9 @@
 package org.otus;
 
+import logging.LoggingInvocationHandler;
+import logging.TestLogging;
+import logging.TestLoggingInterface;
+
 import java.lang.reflect.Proxy;
 
 public class Demo {

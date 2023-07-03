@@ -1,4 +1,4 @@
-package org.otus;
+package logging;
 
 public interface TestLoggingInterface {
     void calculation(int param);

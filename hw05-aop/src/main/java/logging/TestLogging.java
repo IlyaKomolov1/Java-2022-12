@@ -1,4 +1,4 @@
-package org.otus;
+package logging;
 
 public class TestLogging implements TestLoggingInterface {
     @Log

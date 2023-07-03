@@ -1,4 +1,4 @@
-package org.otus;
+package logging;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
