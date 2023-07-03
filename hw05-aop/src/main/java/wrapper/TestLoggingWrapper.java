@@ -1,4 +1,5 @@
 package wrapper;
+
 import logging.LoggingInvocationHandler;
 import logging.TestLogging;
 import logging.TestLoggingInterface;
