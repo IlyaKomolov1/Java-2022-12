@@ -1,20 +1,14 @@
 package org.otus;
 
-import logging.LoggingInvocationHandler;
 import logging.TestLogging;
 import logging.TestLoggingInterface;
-
-import java.lang.reflect.Proxy;
-
+import IoC.IoC;
 public class Demo {
     public static void main(String[] args) {
-        TestLoggingInterface testLogging = (TestLoggingInterface) Proxy.newProxyInstance(
-                TestLogging.class.getClassLoader(),
-                TestLogging.class.getInterfaces(),
-                new LoggingInvocationHandler(new TestLogging())
-        );
+        TestLoggingInterface testLogging = IoC.createProxy(new TestLogging());
         testLogging.calculation(6);
         testLogging.calculation(3, 5);
         testLogging.calculation(1, 2, "hello");
     }
 }
+
