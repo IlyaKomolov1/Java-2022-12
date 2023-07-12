@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation group: 'org.ow2.asm', name: 'asm', version: '9.3'
+}
+
+compileJava {
+    options.compilerArgs = ["-parameters"]
+}
