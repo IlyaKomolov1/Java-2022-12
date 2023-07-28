@@ -1,6 +1,5 @@
 
 
-
 import handler.ComplexProcessor;
 import listener.ListenerPrinterConsole;
 import listener.HistoryListener;
@@ -48,7 +47,7 @@ public class PatternsDemo {
 
         var result = complexProcessor.handle(message);
         dataList.clear();
-        System.out.println("result:                    " + result); //Для того чтобы в консоли было нагляднее
+        System.out.println("result:" + result);
         var msgFromHistory = historyListener.findMessageById(1L);
         System.out.println("messageFromHistory: " + msgFromHistory.toString());
     }

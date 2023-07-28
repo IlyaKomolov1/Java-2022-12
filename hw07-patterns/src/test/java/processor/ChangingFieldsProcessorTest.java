@@ -11,7 +11,7 @@ import processor.homework.ChangingFieldsProcessor;
 class ChangingFieldsProcessorTest {
 
     @Test
-    @DisplayName("поменять местами поля field11 и field12")
+    @DisplayName("меняем местами поля field11 и field12")
     void process() {
         var message = new Message.Builder(2)
                 .field11("field11")
